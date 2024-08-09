@@ -8,7 +8,7 @@ import white_arrow from '../../assets/edusity_assets/white-arrow.png'
 
 const Gallery = () => {
   return (
-    <div className='campus'>
+    <div className='campus' id='gallary'>
         <div className="gallery">
             <img src={gallery1} alt=''/>
             <img src={gallery2} alt=''/>

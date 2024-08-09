@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './Navbar.css'
 import logo from '../../assets/edusity_assets/logo.png'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
 
 
 const Navbar = () => {
@@ -24,12 +25,16 @@ const Navbar = () => {
 
   
         <ul className="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="#" className="nav-link px-2 link-secondary">Home</a></li>
-          <li><a href="#" className="nav-link px-2">Program</a></li>
-          <li><a href="#" className="nav-link px-2">Testimonials</a></li>
-          <li><a href="#" className="nav-link px-2">Contact</a></li>
-          <li><a href="#" className="nav-link px-2">About</a></li>
-        </ul>
+      <li><Link to='hero' smooth={true} offset={0} duration={500} className="nav-link px-2">Home</Link></li>
+      <li><Link to='program' smooth={true} offset={-260} duration={500} className="nav-link px-2">Program</Link></li>
+      <li><Link to='about' smooth={true} offset={-150} duration={500} className="nav-link px-2">About</Link></li>
+      <li><Link to='campus' smooth={true} offset={-260} duration={500} className="nav-link px-2">Campus</Link></li>
+      <li><Link to='testimonials' smooth={true} offset={-260} duration={500} className="nav-link px-2">Testimonials</Link></li>
+      <li><Link to='contact' smooth={true} offset={-260} duration={500} className="nav-link px-2">Contact</Link></li>
+     
+      
+    </ul>
+
   
         <div className="col-md-3 text-end">
           <button type="button" className="btn btn-outline-primary me-2">Login</button>
